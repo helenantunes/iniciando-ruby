@@ -1,0 +1,21 @@
+Interger 
+ Conunto de numeros positovos (-1,-2,5,6)
+Float
+ Numeros reais inexatos, numeros com ponto flutuante (1.5,5.9,8.5)
+Boolean
+ Tipo de dado usado para informar veracidade, pois dois estados true (instancia da classe TrueClass)
+ e false (instacia da clase FalseClass)
+String
+ #Tipo que representa um texto, conjunto de letras, simbolos e numeros.
+ Usado com aspas dupla ou simples '' - " "
+Array 
+ #Conjunto de dados
+Symbol
+ É um tioi de dado sememlhante a String, com diferença de que ele é um objeto imutavel.
+ Duas strings identicas podem ser objetos diferentes, masum simbolo é apenas um obejeto ocupando sempre o memso espaço de memoria.
+ Sempre é definido começando com doispontos :seguido de seu nome
+Hash
+ Representa uma coleção de dados organizados por chaves unicas e seus respectivos valores.
+ array é definido com []
+ hash é definido com {}
+ 

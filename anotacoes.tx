@@ -1,0 +1,11 @@
+git add .
+git status
+git commit -m "jjj"
+git status
+git pusch origin main
+
+pwd
+ para saber o caminho da onde esto 
+ls
+ ver em diretorio esta
+history
