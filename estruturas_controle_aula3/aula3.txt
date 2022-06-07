@@ -21,3 +21,8 @@ Executa o trecho de um codigo
 
  Uncless - Executado quando a condição é falsa
  Case - Parecido com o If. Ele se enquadra muito bem a situaçeos com diversas condiçoes. 
+
+ FOR - usado para percorrer uma coleçõo de elementos 
+ WHILE - instrução que repete um bloco de codigo enquanto sua condição é verdadeira 
+ TIMES - executa uma repetição por um detreminado numero de vezes
+ DO / WHILE -> LOOP - ele cria um laço de repetição so é parado quando uma instrução break for verdadeira 
