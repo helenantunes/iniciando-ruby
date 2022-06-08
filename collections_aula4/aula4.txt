@@ -1,0 +1,5 @@
+O que são colletions?
+  Na programação, collection representa um conjunto de dados semelhantes em uma unica unidade.
+  Array e Hash são os principais tipos de collections.
+
+PAREI NA AULA 4 14:38 MINUTOS
