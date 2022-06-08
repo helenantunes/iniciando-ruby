@@ -2,7 +2,7 @@ result = ''
 
 loop do
     puts result 
-    puts result2
+    puts '_______________________________'
     puts '_______________________________'
     
     puts 'Selecione uma das seguintes opções'
@@ -30,7 +30,6 @@ elsif option == 2
  
     result = "Quem tem a altura de #{altura} e o peso de #{peso}, o IMC é: #{imc}"
 
-    break 
 else 
     result = 'Opção Invalida'
 end
