@@ -110,6 +110,16 @@ git pusch origin main
  
  Realiza uma seleção de elementos presentes em uma collection atraves de uma condição pré definida. Traz como resultado somente os valores que passam nesta condição.
 
+ -------
+ ## Aula 5 'Metodos e Gem'
+ ------
+ Metodos são como funções, conjunto de codigos para serem ultilizados varias vezes com facil acesso. 
+ Gem são como bibliotecas para usar funcionalidades especificas
+
+ *Ex de instalação de uma gem:*
+
+ **gem install nome da gem**
+
 -------
  ## 13/06/2022 - Aula 6 'Orientação a objeto'
 -------
@@ -157,3 +167,12 @@ git pusch origin main
   
   Comportamentos: Late, Come, Corre.
 
+ -------
+ ## 14/06/2022 - Aula 7 'Orientação a objeto part2' 
+ -------
+* REQUIRE
+* ESCOPO DAS VARIAVEIS 
+* ATRIBUTOS
+* CONSTRUTORES
+
+ 
