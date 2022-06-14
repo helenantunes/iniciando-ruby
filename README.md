@@ -141,3 +141,19 @@ git pusch origin main
 
   Por definição, objeto é toda coisa material que pode ser percebida pelos sentindos, como por exemplo um carro, livro, cachorro, caneta, avião e etc.
   Na programção um objeto é a representação de um objeto do mundo real. 
+  Todos estes objetos apresntam duas caracteristica em comum: informação e comportamento. 
+
+  *Informações - Atributos*
+
+  *Comportamento - Metodos*
+
+  *Ex: de objeto*
+
+  Raça: Pastor Alemão
+
+  Peso: 35 Quilos
+
+  Idade: 3 Anos
+  
+  Comportamentos: Late, Come, Corre.
+
