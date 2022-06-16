@@ -171,8 +171,46 @@ git pusch origin main
  ## 14/06/2022 - Aula 7 'Orientação a objeto part2' 
  -------
 * REQUIRE
+  
+  É ultilizado para carregar as gem(s) e outros programas, atraves do require vc chama outro arquivo.
+
 * ESCOPO DAS VARIAVEIS 
+  
+  O escopo define onde a variavel vai estar disponivel dentro do programa. 
+
+  No ruby existe 4 tipos:
+
+  * variavel local
+  
+    É declarada com a primeira letra de seu nome sendo uma letra minuscula ou sublinhado.
+
+    Pode ser acessada apenas onde foi criada. Por exemplo, se você definir uma variavel local dentro de uma classe ela estará disponível apenas dentro desta classe, se a definiu dentro de um metodo, conseguirá acessa-la apenas dentro deste metodo e assim por diante. 
+
+  * variavel global 
+
+    É declarada com o prefixo $.
+    Seu uso é fortemente desencorajado pois além de ser visível em qualquer lugar do código, também pode ser alterada em inumeros locais ocasionando dificuldades no rastreamento de bugs. 
+
+
+  * variavel de classe
+
+    É declarada com o prefixo @@.
+
+    Pode ser acessada em qualquer lugar da classe onde foi declarada e seu valor é compartilhado entre todas as instãncias de sua classe.
+
+  * variavel de instancia 
+
+    Seu nome começa vom o símbolo @.
+
+    Semelhante a variável de classe, tendo como única difernça o valor que não é compartilhado entre todas as intâncias de sua classe.
+  
 * ATRIBUTOS
+  
+   Atributos (ou variáveis de instância) no Ruby são sempre privados e começam com @, eles só podem ser alterados pelos métodos de um objeto. 
+   
 * CONSTRUTORES
+  
+   Toda vez que a instãncia de uma classe é craiada, o ruby procura por um método chamado initialize.
+   Você pode criar este método para especificar valores padrões durante a construção do objeto. 
 
  
