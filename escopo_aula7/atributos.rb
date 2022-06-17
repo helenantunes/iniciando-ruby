@@ -4,7 +4,7 @@ class Dog
         @name
     end
 
-    def name= name #isso é igual a isso > def name (name) ?
+    def name= name #isso é igual a isso > def name=(name) ?
         @name = name 
     end
 end

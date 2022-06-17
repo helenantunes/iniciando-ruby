@@ -18,4 +18,5 @@ bar.foo
 baz.qux
 baz.qux
 puts $global 
+
 #variavel global tem o mesmo valor independente do lugar que esta sendo acessada 
