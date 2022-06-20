@@ -2,8 +2,9 @@ require_relative 'produto.rb'
 require_relative 'mercado.rb'
 
 produto = Produto.new
-produto.nome_produto = 'Manteiga'
-produto.valor_produto = 2.50
+produto.nome = 'Manteiga'
+produto.preco = 2.50
 
-meracdo = Mercado.new
+mercado = Mercado.new(produto.nome, produto.preco).comprar
+# Mercado.new = (produto.nome, produto.preco).comprar >> assim tb da certo, pq ?
 

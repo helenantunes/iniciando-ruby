@@ -213,4 +213,14 @@ git pusch origin main
    Toda vez que a instãncia de uma classe é craiada, o ruby procura por um método chamado initialize.
    Você pode criar este método para especificar valores padrões durante a construção do objeto. 
 
+   
+ -------
+ ##  Aula 8 'Ruby Avançado part1' 
+ -------
+
+ * BLOCKS 
+  
+   Um bloco pode ser entedido como uma função anônima, ou seja uma função sem nome.
+   É definido entre do.. end ou colchetes e da mesma forma que os metodos que voce viu até agora, pode receber parâmetros para sua execução. 
+
  

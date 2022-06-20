@@ -1,9 +1,4 @@
 class Produto 
-    def item
-    @nome_produto 
-    @valor_produto 
-    end
+    attr_accessor :nome, :preco
 end
 
-produto = Produto.new
-puts produto.item
