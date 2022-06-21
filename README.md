@@ -9,6 +9,10 @@ git status
 git commit -m "nome que desejar"
 
 git pusch origin main
+
+formatação
+
+ rubocop -A desafio_ralph/funcoes.rb 
 ----
 ## Aula 2 'Conceitos'
 ----
