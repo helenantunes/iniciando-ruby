@@ -1,5 +1,9 @@
 # Estudo de programção 
 
+CTRL + "k" + "c" e CTRL + "k" + "u":
+
+Comenta o texto selecionado (opção "c") e descomenta o texto selecionado (opção "u").
+
 *Comandos para atualizar o GitHub*
 
 git add .
