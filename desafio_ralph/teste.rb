@@ -53,10 +53,34 @@
 
 
 
-# def capitalize(frase)
-#   puts "#{frase.split.map(&:capitalize).join(' ')}"
-# end
+def capitalize(frase)
+  puts "#{frase.split.map(&:capitalize).join(' ')}"
+end
 
-# puts capitalize('a short sentence') # "A Short Sentence"
-# puts capitalize('a lazy fox') # "A Lazy Fox"
-# puts capitalize('look, it is working!') # "Look, It Is Working!"
+puts capitalize('a short sentence') # "A Short Sentence"
+puts capitalize('a lazy fox') # "A Lazy Fox"
+puts capitalize('look, it is working!') # "Look, It Is Working!"
+
+def longest_word(str)
+    b = ""
+
+    str.scan (/\w+/) do |a|
+        if a.length > b.length
+            b = a
+        end
+    end
+    
+    return b
+end
+
+puts longest_word('Hello there') # "Hello"
+puts longest_word('My name is Adam') # "name"
+puts longest_word('fun&!! time') # "time"
+
+#(/\w+/)
+
+# a  =  " mundo cruel " 
+# a . scan (/ \w + /)         #=> ["cruel", "world"] 
+# a . scan (/ ... /)         #=> ["cru", "el ", "wor"] 
+# a . scan (/ (...) /)       #=> [["cru"], ["el "], ["wor"]] 
+# a . scan (/ (..)(..) /)    #=> [["cr", "ue"], ["l ", "wo"]]

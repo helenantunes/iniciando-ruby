@@ -2,16 +2,26 @@ require 'date'
 # frozen_string_literal: true
 
 # 1 - Capitalize
-#
-# Escreva uma função que receba uma string
-# A função deve retorna a frase com primeira letra de cada palavra em caixa alta.
-#
-# Examplo:
 
-# Exercício 1
-puts capitalize( ) # "A Short Sentence"
-puts capitalize('a lazy fox') # "A Lazy Fox"
-puts capitalize('look, it is working!') # "Look, It Is Working!"
+def capitalize(frase)
+  puts "#{frase.split.map(&:capitalize).join(' ')}"
+end
+
+
+# 2 - Longest Word
+#'My name is Adam
+
+def longest_word(str)
+  b = ""
+
+  str.scan (/\w+/) do |a|  #scan vai vai fazer verredura da string ##split
+      if a.length > b.length
+          b = a
+      end
+  end
+  
+  return b
+end
 
 # 3 - Dado uma string e uma letra, deve-se retornar a posição da primeira incidência desta letra
 
@@ -19,8 +29,6 @@ puts capitalize('look, it is working!') # "Look, It Is Working!"
 def achar_posicao(palavra, letra )
   palavra.index(letra)
 end
-
-puts achar_posicao('Lambada', 'a')
 
 # 4 - Dado dois números, deve-se comparar o primeiro número com o segundo.
 #
@@ -38,10 +46,6 @@ def quem_eh_maior(num1, num2)
 
   end
 end
-
-puts quem_eh_maior(10, 1) # "Número [10] é maior do que número [1]"
-puts quem_eh_maior(-10, 1) # "Número [-10] é menor do que número [1]"
-puts quem_eh_maior(0, 0) # "Empate!"
 
 #  5 - Exercícios com data
 #
@@ -65,13 +69,6 @@ def dia_da_semana
   puts "Dia da semana: #{dia.strftime("%a")}"
 end
 
-puts 'Exercício 5.1'
-puts data_atual_formatada #('YYYY-MM-dd HH:mm:ss')
-puts data_atual_formatada #('dd/MM/YYYY')
-
-
-# puts 'Exercício 5.2'
-# puts dia_da_semana
 
 # 7 - Exercício com Array
 # Dado um Array
@@ -85,26 +82,38 @@ puts data_atual_formatada #('dd/MM/YYYY')
 
 array = ['9', '1', '3', '7', '5']
 
-def descrescente(a)
+def descrescente(array)
+  menor_numero = "0"
+  novo_array = []
+  array.each do |a|
+    if a > menor_numero
+      novo_array.push(a)    #continuar 
+    end
+
+
+
+
+
+    #puts "Ordenando Array #{a.reverse}" #deu  certo mais preciso entender esse blco {|x, y| y <=> x} ???
     
 end
 
-def inteiros(b)
+def inteiros(array)
     
-     result = b.map do |x| 
+     result = array.map do |x| 
       x.to_i
      puts "Numeros inteiros #{result}"
 end
 
-def tamanho(c)
-    puts "Tamanho do Array #{c.length}"
+def tamanho(array)
+    puts "Tamanho do Array #{array.length}"
 end
 
-def maior(d)
+def maior(array)
     for aumenta in 5...25
-        d.push('nill')
+      array.push('nill')
     end
-    puts "Array 5x maior #{d}"
+    puts "Array 5x maior #{array}"
 end
 
 
@@ -123,22 +132,24 @@ hash = {
 # 8.3) um hash invertido, trocar chave por valor e valor por chave
 # 8.4) um hash com os estados do Sul
 
-def quant_chaves (a)
-  puts "A quantidade de chaves é #{a.keys.length}"
+def quant_chaves(hash)
+  puts "A quantidade de chaves é #{hash.keys.length}"
 end
 
-quant_chaves (hash)
 
-def quant_valores (b)
-  puts "A quantidade de valores é #{b.values.length}"
+def quant_valores(hash)
+  puts "A quantidade de valores é #{hash.values.length}"
 end
 
-quant_valores (hash)
 
-
-def inversao (c)
-  d = c.invert
+def inversao (hash)
+  d = hash.invert
   puts "#{d}"
+end
+
+
+def estados_sul(hash)
+  hash = {'PR'=>'Paraná', 'SC' => 'Santa Catarina', 'RS'=> 'Rio Grande do Sul'}
 end
 
 
@@ -163,5 +174,6 @@ def multiplos
       puts x.to_s
     end
   end
+ end
 end
 
