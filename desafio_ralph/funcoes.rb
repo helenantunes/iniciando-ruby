@@ -90,10 +90,6 @@ def descrescente(array)
       novo_array.push(a)    #continuar 
     end
 
-
-
-
-
     #puts "Ordenando Array #{a.reverse}" #deu  certo mais preciso entender esse blco {|x, y| y <=> x} ???
     
 end

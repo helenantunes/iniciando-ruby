@@ -1,5 +1,15 @@
 class Pessoa
-    attr_accessor :nome, :sobrenome, :idade, :peso, :altura, :cachorro
+    attr_accessor :nome, :sobrenome, :idade, :peso, :altura, :cachorros
+
+    def add_dog(cachorro)
+        cachorros[]
+        (cachorro)
+    end
+
+
+    # def initialize(cachorro)
+    #     @cachorro = cachorro
+    # end
  
     def imc
         result = peso / (altura * altura)
@@ -11,21 +21,13 @@ class Pessoa
     end
 end
 
-class Cachorro < Pessoa
+class Cachorro 
+    attr_accessor :nome, :idade
+
     def latir
         puts 'Au, au'
     end
 end
-
-p1 = Pessoa.new
-p1.nome = 'Helena'
-p1.sobrenome = 'Antunes'
-p1.idade = 26
-p1.peso = 61
-p1.altura = 1.66
-
-p1.imc
-p1.nomeCompleto
 
 c1 = Cachorro.new
 c1.nome = 'Molly'
@@ -38,15 +40,33 @@ c2.idade = 5
 c2.latir
 
 
-puts '______'
+p1 = Pessoa.new
+p1.nome = 'Helena'
+p1.sobrenome = 'Antunes'
+p1.idade = 26
+p1.peso = 61
+p1.altura = 1.66
 
-puts c1.is_a? Cachorro 
-puts p1.is_a? Cachorro 
-puts p1.is_a? Pessoa 
-puts c1.is_a? Pessoa 
+p1.imc
+p1.nomeCompleto
 
-p1.cachorro = c2
+#puts p1.cachorro
 
-p p1.cachorro
-p p1
+p1.add_dog(c1)
+
+
+
+
+
+# puts '______'
+
+# puts c1.is_a? Cachorro 
+# puts p1.is_a? Cachorro 
+# puts p1.is_a? Pessoa 
+# puts c1.is_a? Pessoa 
+
+# p1.cachorro = c2
+
+# p p1.cachorro
+# p p1
 

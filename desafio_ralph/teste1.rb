@@ -44,14 +44,28 @@
 
 array = ['9', '1', '3', '7', '5']
 
+# def descrescente(array)
+#   menor_numero = '0'
+#   novo_array = []
+#   array.each do |a|
+#     if a > menor_numero
+#      novo_array(a)
+#      else
+#       novo_array(menor_numero)
+#     end
+#     puts novo_array
+#   end
+#   #puts "#{novo_array}"
+
+   
+# end
+
+#descrescente(array)
+
+
 def descrescente(array)
-  menor_numero = "0"
-  novo_array = []
-  array.each do |a|
-    if a > menor_numero
-      novo_array.push[a]   #continuar 
-    end
-    p novo_array
-  end
-    puts " x #{novo_array}"
+puts "#{array.sort.reverse}"
 end
+
+descrescente(array)
+
