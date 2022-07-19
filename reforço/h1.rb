@@ -1,4 +1,4 @@
-# pode se -> nomes = Hash.new
+# pode ser -> nomes = Hash.new
 
 nomes = {1 => 'Helena', 2 => 'Maria', 3 => 'João', 5 => 'Lucas'}
 puts nomes
@@ -35,7 +35,9 @@ puts teste.empty?
 
 hash = {}
 
-hash = {h: => 'f'}
+hash[:h] = 'f'
+
+puts hash
 
 
 

@@ -146,6 +146,7 @@ end
 
 def estados_sul(hash)
   hash = {'PR'=>'Paraná', 'SC' => 'Santa Catarina', 'RS'=> 'Rio Grande do Sul'}
+  puts "#{hash}"
 end
 
 
