@@ -1,4 +1,4 @@
-# Estudo de programção 
+# Ruby 
 
 CTRL + "k" + "c" e CTRL + "k" + "u":
 
